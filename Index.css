@@ -1,0 +1,104 @@
+.navigation /*barre de naviguation*/
+{
+    width: 100%;
+    color: rgb(84, 84, 221);
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo78
+{
+    height: 10px;
+    width: 10px;
+}
+.image-accueil /*block comprenant 1ere photo, description corssfit et titre page*/
+{
+    width: 100%;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+    background-image: url("femmebarre.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.texteaccueil /*Texte de description du corssfit avec fond beige*/
+{
+    grid-column: start/;
+    background-color: antiquewhite;
+    opacity: 70%;
+    color: black;
+    text-align: justify;
+    width: 35%;
+    margin-left: 40px;
+    padding: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.C78 /* Titre de la page */
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.block1,.block2,.block3 /*Trois blocks alignés comprenant une image un titre et un paragraphe*/
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column ;
+    text-align: justify;
+    margin: 20px;
+}
+.titre /* titres de chacuns des blocs */
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.main /* comprends les 3 blocks*/
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.hommepushup, .femmecorde, .femmepoids /* photos des trois blocs */
+{
+    width: 100%;
+    height: auto ;
+}
+
+/*petits appareils smartphone avec orientation paysage*/
+@media screen and (max-width: 767px) and (orientation:portrait) 
+{
+.navigation
+{
+    font-size:15px;
+}
+.hommepushup, .femmecorde, .femmeplanche /* photos des trois blocs */
+{
+    width: 100%;
+    height: 150px;
+}
+}
+
+@media screen and (max-width: 768px)
+{
+.navigation
+{
+    font-size: 15px;
+}
+.texteaccueil
+{
+    font-size: 13px;
+}
+.main
+{
+    margin-top: 10px;
+}
